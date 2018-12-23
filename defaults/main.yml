@@ -1,0 +1,6 @@
+---
+# Set java__packages if you would like to use a different version than the
+# default (OpenJDK 1.7).
+# java__packages: []
+
+java__java_home: ""
