@@ -3,3 +3,5 @@
   package:
     name: "{{ java__packages }}"
     state: present
+  register: java__pkg_install_result
+  until: java__pkg_install_result | success

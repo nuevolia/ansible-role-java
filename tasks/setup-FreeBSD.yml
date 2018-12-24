@@ -3,6 +3,8 @@
   pkgng:
     name: "{{ java__packages }}"
     state: present
+  register: java__pkg_install_result
+  until: java__pkg_install_result | success
 
 - name: ensure proc is mounted
   mount: name=/proc fstype=procfs src=proc opts=rw state=mounted
