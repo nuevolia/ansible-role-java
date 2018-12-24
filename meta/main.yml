@@ -3,6 +3,7 @@ dependencies: []
 
 galaxy_info:
   author: nuevolia
+  role_name: java
   description: Java for Linux
   company: "nuevolia.com"
   license: "license (BSD, MIT)"
