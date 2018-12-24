@@ -4,6 +4,7 @@
 
 Installs Java for RedHat/CentOS and Debian/Ubuntu linux servers.
 
+
 ## Requirements
 
 None.
