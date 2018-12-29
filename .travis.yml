@@ -17,10 +17,10 @@ env:
     - MOLECULE_DISTRO: ubuntu1604
 
 before_install:
-  - sudo apt-get -qq update
+  - apt-get -qq update
 
 install:
-  - pip install --user -r requirements.txt
+  - pip install -r requirements.txt
 
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
