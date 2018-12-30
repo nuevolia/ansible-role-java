@@ -1,4 +1,4 @@
-ansible>=2.6,ansible<2.7
+ansible >=2.6,<2.7
 molecule==2.19.0
 docker~=3.6
 flake8==3.5.0
