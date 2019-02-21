@@ -1,5 +1,5 @@
 ---
-dist: trusty
+dist: bionic
 language: python
 python:
   - "3.6"
@@ -17,7 +17,6 @@ env:
     - MOLECULE_DISTRO: ubuntu1604
 
 before_install:
-  - sudo apt-get -qq update
   - pip install -U pip
 
 install:
@@ -28,8 +27,7 @@ before_script:
   - cd ../
   - mv ansible-role-$ROLE_NAME nuevolia.$ROLE_NAME
   - cd nuevolia.$ROLE_NAME
-  - pip install -r requirements.txt
-
+  
 script:
   # Run tests.
   - molecule test
