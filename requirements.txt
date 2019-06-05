@@ -1,7 +1,4 @@
-ansible>=2.7.8
-molecule
-flake8==3.5.0
-testinfra==1.16.0
-yamllint==1.11.1
+ansible>=2.7.8,<2.8
+molecule==2.19
 docker
 six
