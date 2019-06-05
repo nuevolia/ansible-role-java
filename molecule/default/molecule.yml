@@ -8,7 +8,7 @@ lint:
   options:
     config-file: molecule/default/yaml-lint.yml
 platforms:
-  - name: instance
+  - name: "${MOLECULE_DISTRO:-centos7}"
     image: "nuevolia/docker-ansible:${MOLECULE_DISTRO:-centos7}"
     command: ${MOLECULE_DOCKER_COMMAND:-""}
     volumes:
